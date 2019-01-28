@@ -6,8 +6,6 @@ source _variable.sh
 mkdir -p $MOUNT_DIR
 
 # create temp dir and download base iso file.
-mkdir -p tmp
-mkdir -p out
 mkdir -p work
 
 if [ ! -e $TMP_IMAGE_FILE_PATH ]; then

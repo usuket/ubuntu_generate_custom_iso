@@ -2,3 +2,4 @@ out/
 work/
 tmp/
 config/
+*.iso

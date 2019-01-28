@@ -8,5 +8,7 @@ ISO_DOWNLOAD_URL="http://cdimage.ubuntu.com/releases/18.04.1/release/ubuntu-18.0
 # REQUIRED
 MOUNT_DIR="work/ubuntu_mount"
 WORKING_DIR="work/ubuntu_mount_r"
-TMP_IMAGE_FILE_PATH="tmp/ubuntu_image.iso"
-OUTPUT_IMAGE_PATH="out/customized_ubuntu.iso"
+TMP_IMAGE_FILE_PATH="work/base_ubuntu_image.iso"
+
+# CUSTOMIZED IMAGE
+OUTPUT_IMAGE_PATH="./customized_ubuntu.iso"

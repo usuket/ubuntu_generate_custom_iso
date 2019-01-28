@@ -12,7 +12,5 @@ if grep -qs $MOUNT_DIR /proc/mounts; then
   echo "unmount $MOUNT_DIR finished."
 fi
 
-sudo rm -rf tmp
-sudo rm -rf out
 sudo rm -rf work
 echo "clean up finished"
