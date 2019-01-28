@@ -49,8 +49,9 @@ sudo cp -v config/isolinux.cfg "$WORKING_DIR/isolinux/isolinux.cfg"
 sudo cp -v config/preseed.cfg "$WORKING_DIR/preseed/preseed.cfg"
 
 echo "Generate custom ISO image"
-rm -f $OUTPUT_IMAGE_PATH 
+rm -vf $OUTPUT_IMAGE_PATH
 sudo genisoimage -quiet -N -J -R -D -V "PRESEED" -o $OUTPUT_IMAGE_PATH -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table $WORKING_DIR
+sudo chmod 644 $OUTPUT_IMAGE_PATH
 
 echo "ISO file created"
 ls -la $OUTPUT_IMAGE_PATH
