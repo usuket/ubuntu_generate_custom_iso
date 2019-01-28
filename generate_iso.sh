@@ -8,6 +8,12 @@ mkdir -p $MOUNT_DIR
 # create temp dir and download base iso file.
 mkdir -p work
 
+if [ ! -d "config" ]; then
+  # Control will enter here if $DIRECTORY NOT exists.
+  echo "error. config directory does not exists."
+  exit -1
+fi
+
 if [ ! -e $TMP_IMAGE_FILE_PATH ]; then
   echo "File does not exist. download first."
   wget -O $TMP_IMAGE_FILE_PATH $ISO_DOWNLOAD_URL
