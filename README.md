@@ -12,7 +12,7 @@ https://www.debian.org/releases/stable/amd64/apbs02.html
 
 ## How to run this script
 ```
-git clone git@github.com:usuket/ubuntu_generate_custom_iso.git
+git clone https://github.com/usuket/ubuntu_generate_custom_iso.git
 cd ubuntu_generate_custom_iso
 cp -r config_template config
 # Please change preseed.cfg to change the setting.
