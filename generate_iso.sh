@@ -38,7 +38,7 @@ echo "Remove all file under $WORKING_DIR"
 sudo rm -rf $WORKING_DIR
 mkdir -p $WORKING_DIR
 
-# Set variable to back this working directory.  
+# Set variable to back this working directory.
 CURRENT_WORKING_DIR=`pwd`
 
 ABS_EXPORT_PATH="`pwd`/$WORKING_DIR"
@@ -53,6 +53,9 @@ cd $CURRENT_WORKING_DIR
 echo "Rewrite configuration files"
 sudo cp -v config/isolinux.cfg "$WORKING_DIR/isolinux/isolinux.cfg"
 sudo cp -v config/preseed.cfg "$WORKING_DIR/preseed/preseed.cfg"
+
+echo "Copy additional dir"
+sudo cp -vr additional/ "$WORKING_DIR"
 
 echo "Generate custom ISO image"
 rm -vf $OUTPUT_IMAGE_PATH
