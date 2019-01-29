@@ -7,6 +7,9 @@ Use Ubuntu ISO and Emulator such as Vmware, VirtualBox.
 https://www.ubuntu.com/download/desktop/thank-you?country=JP&version=18.04.1
 ```
 
+## Docs
+https://www.debian.org/releases/stable/amd64/apbs02.html
+
 ## How to run this script
 ```
 git clone git@github.com:usuket/ubuntu_generate_custom_iso.git
