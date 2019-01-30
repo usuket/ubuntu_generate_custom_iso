@@ -15,11 +15,17 @@ https://www.debian.org/releases/stable/amd64/apbs02.html
 git clone https://github.com/usuket/ubuntu_generate_custom_iso.git
 cd ubuntu_generate_custom_iso
 cp -r config_template config
+cp -r additional_template additional
 # Please change preseed.cfg to change the setting.
 # Commit is not recommended as it also includes users and initial passwords.
 bash generate_iso.sh
 ls -la customized_ubuntu.iso
 ```
+
+## How to customize the initialization process
+modify listed files below. 
+- config/proseed.cfg
+- additional/main.sh
 
 ## sample preseed.cfg
 ```
