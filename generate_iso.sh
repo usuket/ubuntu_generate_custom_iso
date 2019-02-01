@@ -54,6 +54,9 @@ echo "Rewrite configuration files"
 sudo cp -v config/isolinux.cfg "$WORKING_DIR/isolinux/isolinux.cfg"
 sudo cp -v config/preseed.cfg "$WORKING_DIR/preseed/preseed.cfg"
 
+mkdir -p additional
+touch additional/main.sh
+
 echo "Copy additional dir"
 sudo cp -vr additional/ "$WORKING_DIR"
 
