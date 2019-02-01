@@ -27,6 +27,15 @@ modify listed files below.
 - config/proseed.cfg
 - additional/main.sh
 
+## How to add cached file.
+The directory named "additional" can be used as an interface to add some files to customized ISO.
+```bash
+additonal/{FILE_NAME}
+# This file will appear in customized ISO.
+# So it means you can access the file by installation script or main.sh
+/media/cdrom/additional/{FILE_NAME}
+```  
+
 ## sample preseed.cfg
 ```
 wget -O preseed.cfg https://www.debian.org/releases/stretch/example-preseed.txt
