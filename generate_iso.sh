@@ -63,7 +63,7 @@ sudo cp -vr additional/ "$WORKING_DIR"
 echo "Generate custom ISO image"
 rm -vf $OUTPUT_IMAGE_PATH
 sudo genisoimage -quiet -N -J -R -D -V "PRESEED" -o $OUTPUT_IMAGE_PATH -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table $WORKING_DIR
-sudo chown ubuntu:ubuntu $OUTPUT_IMAGE_PATH
+sudo chown $USER:$USER $OUTPUT_IMAGE_PATH
 chmod 644 $OUTPUT_IMAGE_PATH
 
 echo "ISO file created"
